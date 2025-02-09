@@ -7,13 +7,13 @@ const AppLogo = () => {
       alignItems="center"
       justifyContent="center"
       bgGradient="linear(to-r, gold.400, white)"
-      p={4}
+      p={{ base: 2, md: 3, lg: 4 }} 
       borderRadius="lg"
       boxShadow="lg"
       position="relative"
       overflow="hidden"
     >
-
+      {/* Starry Background Effect */}
       <Box
         position="absolute"
         top="0"
@@ -22,28 +22,30 @@ const AppLogo = () => {
         h="100%"
         bg="transparent"
         backgroundImage="radial-gradient(circle, rgba(255,215,0,0.3) 1px, transparent 1px)"
-        backgroundSize="25px 25px"
+        backgroundSize={{ base: "15px 15px", md: "20px 20px", lg: "25px 25px" }} 
         opacity="0.3"
       />
 
+      {/* "Tracker" Text */}
       <Text
-        fontSize="3xl"
+        fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }} 
         fontWeight="bold"
-        letterSpacing="wide"
-        color="blue.800" 
+        letterSpacing={{ base: "wide", lg: "wider" }} 
+        color="blue.800"
         textShadow="3px 3px 8px rgba(255, 215, 0, 0.9)"
         zIndex="1"
       >
         Tracker
       </Text>
 
+      {/* "X" Text */}
       <Text
-        fontSize="3xl"
+        fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }} 
         fontWeight="extrabold"
-        color="red.700" 
-        textShadow="3px 3px 10px rgba(255,0,0,0.9)" 
+        color="red.700"
+        textShadow="3px 3px 10px rgba(255,0,0,0.9)"
         transform="rotate(-5deg)"
-        ml={1}
+        ml={{ base: 0, md: 1 }} 
         zIndex="1"
       >
         X
@@ -53,4 +55,5 @@ const AppLogo = () => {
 };
 
 export default AppLogo;
+
 

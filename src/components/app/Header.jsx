@@ -15,7 +15,7 @@ const Header = () => {
       as="header"
       bgColor="#FFD700"
       w="100%"
-      h="80px"
+      h={{ base: "10%", md: "12%", lg: "13%" }}
       zIndex="1000"
       top="0"
       left="0"
@@ -23,7 +23,7 @@ const Header = () => {
       boxShadow="0px 4px 10px rgba(0,0,0,0.1)"
       alignItems="center"
       justifyContent="space-between"
-      px="20px"
+      px={{ base: "10px", md: "20px", lg: "40px" }}
     >
 
         <IconButton 
