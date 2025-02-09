@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/app/Layout";
 import Expenses from "./pages/Expenses";
 import Trips from "./pages/Trips";
@@ -9,30 +9,31 @@ import NotFound from "./pages/NotFound";
 import Header from "./components/app/Header";
 import Footer from "./components/app/Footer";
 import Support from "./pages/Support";
-
-const router = createBrowserRouter ([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      { path: "", element: <Home /> },
-      { path: "expenses", element: <Expenses /> },
-      { path: "trips", element: <Trips /> },
-      { path: "approval", element: <Approval /> },
-      { path: "settings", element: <Settings /> },
-      { path: "support", element: <Support /> },
-    ],
-  },
-  { path: "*", element: <NotFound /> },
-]);
+import MobileFooter from "./components/app/MobileFooter";
+import MobileHeader from "./components/app/MobileHeader";
 
 function App() {
-  return <>
-  <Header />
-  <RouterProvider router={router} />
-  <Footer />
-  </>;
+  return (
+    <>
+      <Header />
+      <MobileHeader />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="expenses" element={<Expenses />} />
+          <Route path="trips" element={<Trips />} />
+          <Route path="approval" element={<Approval />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="support" element={<Support />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+      <MobileFooter />
+    </>
+  );
 }
 
-export default App
+export default App;
+
 

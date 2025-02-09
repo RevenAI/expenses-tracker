@@ -19,4 +19,5 @@ const sidebarSlice = createSlice({
 export const {
     toggleNavSize
 } = sidebarSlice.actions;
+
 export default sidebarSlice.reducer;

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleNavSize } from "../../state/slices/sidebarSlice";
 import AppLogo from "./AppLogo";
 import { ColorModeButton } from "../ui/color-mode";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -11,11 +12,11 @@ const Header = () => {
 
   return (
     <Flex 
+      hideBelow="md"
       pos="fixed"
       as="header"
       bgColor="#FFD700"
-      w="100%"
-      h={{ base: "10%", md: "12%", lg: "13%" }}
+      h="15%"
       zIndex="1000"
       top="0"
       left="0"
@@ -23,7 +24,6 @@ const Header = () => {
       boxShadow="0px 4px 10px rgba(0,0,0,0.1)"
       alignItems="center"
       justifyContent="space-between"
-      px={{ base: "10px", md: "20px", lg: "40px" }}
     >
 
         <IconButton 
@@ -47,7 +47,9 @@ const Header = () => {
 
         <Flex>
           <Heading style={{cursor: "pointer"}}>
-            <AppLogo />
+            <Link to="/">
+              <AppLogo />
+            </Link>
           </Heading>
         </Flex>
       
@@ -56,4 +58,16 @@ const Header = () => {
 };
 
 export default Header;
+
+/*  
+<Box 
+          w={{lg:"20%", xl:"20%"}}
+          p={{lg:"25px", xl:"25px"}}
+          m={{lg:"25px", xl:"25px"}}
+        >
+            <Link to="/">
+                <AppLogo />
+            </Link>
+        </Box>
+*/
 

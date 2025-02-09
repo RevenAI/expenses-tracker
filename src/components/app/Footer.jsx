@@ -5,6 +5,7 @@ const Footer = () => {
 
   return (
     <Flex
+      hideBelow="md"
       as="footer"
       pos="fixed"
       bottom="0"
@@ -19,7 +20,7 @@ const Footer = () => {
       justifyContent="center"
       px="20px"
     >
-      <Text fontSize="xm" fontWeight="bold" color="blue.800" textAlign="center">
+      <Text fontSize={ {lg: "1.4em", xl: "sm"}} fontWeight="bold" color="blue.800" textAlign="center">
         © {today.getFullYear()} Tijani IA. All Rights Reserved. || Powered by InternPulse
       </Text>
     </Flex>

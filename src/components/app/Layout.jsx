@@ -6,7 +6,11 @@ import Footer from "./Footer";
 
 const Layout = () => {
   return (
-   <Flex as="main" mt="80px" mb="40px">
+   <Flex 
+   as="main" 
+   mt={{md: "80px", lg: "80px", xl: "85px"}}
+   mb={{md: "40px", lg: "40px", xl: "45px"}}
+   >
     <Header />
      <Flex as="aside">
         <Sidebar />
@@ -21,5 +25,4 @@ const Layout = () => {
 }
 
 export default Layout
-
 

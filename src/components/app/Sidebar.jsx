@@ -17,6 +17,7 @@ const Sidebar = () => {
 
   return (
     <Flex
+        hideBelow="md"
         pos="sticky"
         left="5"
         h="100vh"
@@ -37,7 +38,10 @@ const Sidebar = () => {
         >
 
             {/* Avater section */}
-            <Flex align="center">
+            <Flex 
+            align="center"
+            pt="25px"
+            >
                 <Avatar.Root css={avarterStyling}>  
                 <Avatar.Fallback name="Tijani Abidemi" />
                 <Avatar.Image 
@@ -62,14 +66,15 @@ const Sidebar = () => {
         flex="1"
         >
 
-               <Box as="div">
-               <NavMenu navSize={navSize} icon={FaHome} title="Dashboard" path="/" description="It works!" active />
-                <NavMenu navSize={navSize} icon={FaClipboardList} title="Expenses" path="/expenses" description="It works!" />
-                <NavMenu navSize={navSize} icon={FaPlaneDeparture} title="Trips" path="/trips" description="It works!" />
-                <NavMenu navSize={navSize} icon={FaClipboardCheck} title="Approval" path="/approval" description="It works!" />
-                <NavMenu navSize={navSize} icon={FaSlidersH} title="Settings" path="/settings" description="It works!" />
-                <NavMenu navSize={navSize} icon={FaPhoneAlt} title="Support" path="/support" description="It works!" />
-               </Box>
+          <Box as="div"> 
+            <NavMenu navSize={navSize} icon={FaHome} title="Dashboard" path="/" description="View key insights and track your financial overview at a glance." active />
+            <NavMenu navSize={navSize} icon={FaClipboardList} title="Expenses" path="/expenses" description="Manage and review all your recorded expenses in one place." />
+            <NavMenu navSize={navSize} icon={FaPlaneDeparture} title="Trips" path="/trips" description="Log and monitor travel expenses for better budgeting and reporting." />
+            <NavMenu navSize={navSize} icon={FaClipboardCheck} title="Approval" path="/approval" description="Approve or review pending expense reports and financial requests." />
+            <NavMenu navSize={navSize} icon={FaSlidersH} title="Settings" path="/settings" description="Customize your preferences, notifications, and account settings." />
+            <NavMenu navSize={navSize} icon={FaPhoneAlt} title="Support" path="/support" description="Get help, contact support, or access FAQs and documentation." />
+          </Box>
+
         </Flex>
 
     </Flex>
