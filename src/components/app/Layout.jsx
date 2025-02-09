@@ -8,8 +8,8 @@ const Layout = () => {
   return (
    <Flex 
    as="main" 
-   mt={{md: "80px", lg: "80px", xl: "85px"}}
-   mb={{md: "40px", lg: "40px", xl: "45px"}}
+   mt={{base: "16%", md: "16%", lg: "80px", xl: "85px"}}
+   mb={{ base: "16%", md: "16%", lg: "40px", xl: "45px"}} 
    >
     <Header />
      <Flex as="aside">

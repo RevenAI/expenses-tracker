@@ -1,0 +1,225 @@
+{
+    "expenses": [
+      {
+        "id": 1,
+        "user_id": 3,
+        "category": "Food & Groceries",
+        "amount": 15000,
+        "currency": "NGN",
+        "date": "2025-02-01",
+        "description": "Groceries from Shoprite",
+        "payment_method": "Debit Card",
+        "location": "Shoprite, Ikeja City Mall, Lagos"
+      },
+      {
+        "id": 2,
+        "user_id": 7,
+        "category": "Transportation",
+        "amount": 5000,
+        "currency": "NGN",
+        "date": "2025-02-02",
+        "description": "Uber ride to office",
+        "payment_method": "Cash",
+        "location": "Victoria Island, Lagos"
+      },
+      {
+        "id": 3,
+        "user_id": 5,
+        "category": "Entertainment",
+        "amount": 12000,
+        "currency": "NGN",
+        "date": "2025-02-03",
+        "description": "Cinema ticket & popcorn",
+        "payment_method": "Credit Card",
+        "location": "Silverbird Cinemas, Abuja"
+      },
+      {
+        "id": 4,
+        "user_id": 2,
+        "category": "Rent",
+        "amount": 300000,
+        "currency": "NGN",
+        "date": "2025-02-04",
+        "description": "House rent for February",
+        "payment_method": "Bank Transfer",
+        "location": "GTBank Online Payment"
+      },
+      {
+        "id": 5,
+        "user_id": 9,
+        "category": "Health & Medical",
+        "amount": 25000,
+        "currency": "NGN",
+        "date": "2025-02-05",
+        "description": "Pharmacy bill for medications",
+        "payment_method": "POS",
+        "location": "HealthPlus Pharmacy, Lekki"
+      },
+      {
+        "id": 6,
+        "user_id": 1,
+        "category": "Shopping",
+        "amount": 70000,
+        "currency": "NGN",
+        "date": "2025-02-06",
+        "description": "Clothes and accessories",
+        "payment_method": "Bank Transfer",
+        "location": "Jumia Online Store"
+      },
+      {
+        "id": 7,
+        "user_id": 4,
+        "category": "Utilities",
+        "amount": 18000,
+        "currency": "NGN",
+        "date": "2025-02-07",
+        "description": "Electricity bill (Prepaid)",
+        "payment_method": "Mobile App",
+        "location": "Ikeja Electric Payment Portal"
+      },
+      {
+        "id": 8,
+        "user_id": 10,
+        "category": "Dining Out",
+        "amount": 12000,
+        "currency": "NGN",
+        "date": "2025-02-08",
+        "description": "Dinner at a restaurant",
+        "payment_method": "POS",
+        "location": "The Place Restaurant, Surulere"
+      },
+      {
+        "id": 9,
+        "user_id": 6,
+        "category": "Education",
+        "amount": 50000,
+        "currency": "NGN",
+        "date": "2025-02-09",
+        "description": "School fees installment",
+        "payment_method": "Bank Deposit",
+        "location": "University of Lagos"
+      },
+      {
+        "id": 10,
+        "user_id": 8,
+        "category": "Internet & Subscriptions",
+        "amount": 15000,
+        "currency": "NGN",
+        "date": "2025-02-10",
+        "description": "MTN data plan subscription",
+        "payment_method": "USSD",
+        "location": "MTN Online Recharge"
+      },
+      {
+        "id": 11,
+        "user_id": 2,
+        "category": "Fuel",
+        "amount": 25000,
+        "currency": "NGN",
+        "date": "2025-02-11",
+        "description": "Fuel for car",
+        "payment_method": "Cash",
+        "location": "NNPC Filling Station, Abuja"
+      },
+      {
+        "id": 12,
+        "user_id": 5,
+        "category": "Airtime & Calls",
+        "amount": 5000,
+        "currency": "NGN",
+        "date": "2025-02-12",
+        "description": "Recharge card for mobile calls",
+        "payment_method": "USSD",
+        "location": "MTN Recharge Online"
+      },
+      {
+        "id": 13,
+        "user_id": 7,
+        "category": "Household Items",
+        "amount": 30000,
+        "currency": "NGN",
+        "date": "2025-02-13",
+        "description": "Bought cooking gas and utensils",
+        "payment_method": "POS",
+        "location": "Ebeano Supermarket, Lekki"
+      },
+      {
+        "id": 14,
+        "user_id": 9,
+        "category": "Loan Repayment",
+        "amount": 100000,
+        "currency": "NGN",
+        "date": "2025-02-14",
+        "description": "Monthly loan repayment",
+        "payment_method": "Bank Transfer",
+        "location": "GTBank Loan Payment"
+      },
+      {
+        "id": 15,
+        "user_id": 3,
+        "category": "Fitness & Gym",
+        "amount": 20000,
+        "currency": "NGN",
+        "date": "2025-02-15",
+        "description": "Gym membership renewal",
+        "payment_method": "Credit Card",
+        "location": "Bodyline Gym, Wuse 2"
+      },
+      {
+        "id": 16,
+        "user_id": 6,
+        "category": "Car Maintenance",
+        "amount": 45000,
+        "currency": "NGN",
+        "date": "2025-02-16",
+        "description": "Car servicing and oil change",
+        "payment_method": "Cash",
+        "location": "Total Service Center, Ikeja"
+      },
+      {
+        "id": 17,
+        "user_id": 10,
+        "category": "Travel & Hotel",
+        "amount": 120000,
+        "currency": "NGN",
+        "date": "2025-02-17",
+        "description": "Hotel booking for business trip",
+        "payment_method": "Bank Transfer",
+        "location": "Eko Hotel, Lagos"
+      },
+      {
+        "id": 18,
+        "user_id": 1,
+        "category": "Charity & Donations",
+        "amount": 50000,
+        "currency": "NGN",
+        "date": "2025-02-18",
+        "description": "Donation to orphanage",
+        "payment_method": "Bank Transfer",
+        "location": "Motherless Babies Home, Surulere"
+      },
+      {
+        "id": 19,
+        "user_id": 4,
+        "category": "Clothing & Fashion",
+        "amount": 35000,
+        "currency": "NGN",
+        "date": "2025-02-19",
+        "description": "Bought new shoes and wristwatch",
+        "payment_method": "POS",
+        "location": "Palms Shopping Mall, Lekki"
+      },
+      {
+        "id": 20,
+        "user_id": 8,
+        "category": "Software & Subscriptions",
+        "amount": 10000,
+        "currency": "NGN",
+        "date": "2025-02-20",
+        "description": "Netflix and Apple Music subscription",
+        "payment_method": "Credit Card",
+        "location": "Online Payment"
+      }
+    ]
+  }
+  
